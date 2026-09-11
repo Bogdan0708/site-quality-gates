@@ -1,0 +1,22 @@
+# Reviewed-legitimate HACCP service-description lines for scripts/check-claims.sh.
+# Format: one exact "path:line-text" entry per reviewed line (grep -n's field 1 + fields 3-,
+# i.e. path plus content with the line number stripped — see check-claims.sh's `key` derivation).
+# Only genuine service-description lines belong here. Canonical founder wording
+# ("HACCP-trained" / "instruire HACCP") is accepted by the checker directly.
+# SCA is absent from operational copy until supporting certification is produced.
+# Reviewed 2026-07-21 — Task 4 (claims corrections); RO lines re-reviewed and
+# re-recorded 2026-07-21 — Task 5 (LinkedIn About condensed to fit ≤1,950
+# UTF-16 units: RO paragraph dropped the "Împreună:" flourish sentence, same
+# credential substance, no wording drift from the Task 4 review).
+# ./site/ro/index.html entry re-recorded 2026-07-21 — Task 11 (RO homepage
+# rebuild: same reviewed wording, moved into a `col-desc` bundle-row cell to
+# match the shared ledger-table markup, no substantive change).
+
+# Service-description lines: HACCP-grounded training delivered to client staff.
+./content/profiles.md:Services: Standards Audits, Service Excellence & Luxury Preparation training, Bar & Beverage Mastery (WSET, coffee, cocktail and mocktail technique), Compliance & Process (HACCP, allergen management), and Smart Operations (AI-powered reviews, bookings, no-show and rota systems).
+./content/profiles.md:Servicii: Audituri de Standarde, Excelență în Serviciu & Pregătire de Nivel Luxury, Măiestrie în Bar & Băuturi (WSET, cafea, tehnică de cocktailuri și mocktailuri), Conformitate & Procese (HACCP, gestionarea alergenilor) și Operațiuni Smart (sisteme AI pentru recenzii, rezervări, no-show-uri și planificarea turelor).
+./sales/offer-sheet-en.md:HACCP-grounded allergen management (Natasha's Law) and food safety training, with a documented SOP build-out for consistent operation once we've left.
+./sales/offer-sheet-ro.md:Training HACCP pentru siguranța alimentară și gestionarea alergenilor, plus redactarea procedurilor standard de operare (SOP), pentru o funcționare consecventă și după ce plecăm noi.
+./site/index.html:          <p class="col-desc">HACCP-grounded allergen management (Natasha's Law) and food safety training, with a documented SOP build-out for consistent operation once we've left.</p>
+./site/ro/index.html:          <p class="col-desc">Training HACCP pentru siguranța alimentară și gestionarea alergenilor, plus redactarea procedurilor standard de operare (SOP), pentru o funcționare consecventă și după ce plecăm noi.</p>
+./templates/engagement-letter.md:  - HACCP-grounded allergen management (Natasha's Law) and food safety training.

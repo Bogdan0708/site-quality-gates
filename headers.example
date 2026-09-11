@@ -1,0 +1,6 @@
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; frame-src https://calendly.com; img-src 'self' data: https://*.calendly.com; connect-src 'self' https://calendly.com; base-uri 'self'; form-action 'self'

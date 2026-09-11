@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: check-site.py against the example fixture
+        run: python3 check-site.py example-site
+      - name: check-claims.sh against this repo
+        run: bash check-claims.sh
+      - name: check-domains.sh against this repo
+        run: bash check-domains.sh
