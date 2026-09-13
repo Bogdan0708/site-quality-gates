@@ -16,6 +16,10 @@ jobs:
           python-version: "3.12"
       - name: check-site.py against the example fixture
         run: python3 check-site.py example-site
+      - name: Design-system contrast fixture
+        run: python3 check-contrast.py example-site/style.css
+      - name: Contrast regression cases
+        run: python3 -m unittest discover -s tests -v
       - name: check-claims.sh against this repo
         run: bash check-claims.sh
       - name: check-domains.sh against this repo

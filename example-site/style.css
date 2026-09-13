@@ -1,0 +1,15 @@
+/* Synthetic fixture for the checker's explicit design-system surface map. */
+:root {
+  --ss-green: #163b32;
+  --ss-brass: #96762a;
+  --ss-cream: #f7f4eb;
+  --ss-ink: #202723;
+  --ss-muted: #595e57;
+}
+body { color: var(--ss-ink); background: var(--ss-cream); }
+.note { color: var(--ss-muted); }
+.nav a { color: var(--ss-cream); }
+.start-link-arrow { color: var(--ss-brass); }
+.start-link:hover .start-link-label,
+.start-link:focus-visible .start-link-label { color: var(--ss-brass); font-size: 1.2rem; font-weight: 700; }
+.wordmark .amp { color: var(--ss-brass); }

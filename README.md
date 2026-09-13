@@ -77,3 +77,12 @@ bash check-domains.sh
 `.github/workflows/ci.yml` runs `check-site.py` against `example-site/`,
 plus `check-claims.sh` and `check-domains.sh` against this repo itself, on
 every push/PR.
+
+## CI evidence
+
+CI runs all four gate commands, including `check-contrast.py` against the
+synthetic `example-site/style.css` design-system fixture. Seven subprocess
+regression cases verify passing CSS and rejection of low contrast, unknown
+colours/backgrounds, unreviewed brass body text, stale exemptions, and an
+incorrect rail foreground. Run them with `python3 -m unittest discover -s tests -v`.
+This static checker does not prove browser-computed accessibility or WCAG compliance.
